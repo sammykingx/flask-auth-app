@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta https-equiv="X-UA-Compatible" content="ie=edge" />
+    <title> Page Not Found | Scholar </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/404.css">
+ </head>
+ <body>
+    <div class="wrapper">
+         <div class="container">
+              <div class="grid-row">
+                   <div class="colmun colmun-left">
+                        <img src="static/images/errors/image-left.png" alt="image-left">
+                        <h1 class="px-spc-b-20">We can't find the page you are looking for.</h1>
+                        <span class="px-spc-b-20">This page has been relocated or removed.</span>
+
+			<a href="{{ url_for('index') }}">
+				<button class="go-home"><i class="fa fa-home"></i> Go Home</button>
+			</a>
+                   </div>
+                   <div class="colmun colmun-right">
+                        <img src="static/images/errors/right-shape.png" alt="right-shape">
+                   </div>
+               </div>
+         </div>
+     </div>
+ </body>
+</html>

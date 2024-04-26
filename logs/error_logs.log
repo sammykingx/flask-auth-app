@@ -1,0 +1,27 @@
+=> 2024/04/19 09:37 PM - - WARNING: testing the warning logger (Line: 1 [<stdin>]
+NoneType: None
+=> 2024/04/19 09:52 PM - - ERROR: [Errno -3] Temporary failure in name resolution (Line: 16 [mail.py]
+Traceback (most recent call last):
+  File "/home/vagrant/projects/flask_auth/app/tasks/mail.py", line 13, in send_mail
+    mail.send(msg)
+  File "/home/vagrant/projects/flask_auth/venv/lib/python3.10/site-packages/flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "/home/vagrant/projects/flask_auth/venv/lib/python3.10/site-packages/flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "/home/vagrant/projects/flask_auth/venv/lib/python3.10/site-packages/flask_mail.py", line 156, in configure_host
+    host = smtplib.SMTP_SSL(self.mail.server, self.mail.port)
+  File "/usr/lib/python3.10/smtplib.py", line 1050, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+  File "/usr/lib/python3.10/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.10/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python3.10/smtplib.py", line 1056, in _get_socket
+    new_socket = super()._get_socket(host, port, timeout)
+  File "/usr/lib/python3.10/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/lib/python3.10/socket.py", line 824, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
